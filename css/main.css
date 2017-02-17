@@ -1,0 +1,149 @@
+
+/* START Media Queries */
+
+@media (min-width: 500px) {
+
+  #top_icon
+  img {
+      font-size     : calc(1em + 2vmin);
+      padding-bottom: 1em;
+  }
+
+  #name_subtitle
+  h1 {
+    font-size: calc(2em + 2vmin);
+  }
+
+  #app {
+    font-size: calc(1em + 1vmin);
+  }
+
+  .flex-grid-thirds {
+    /* Container for the three apps that take up 1/3rd of viewport */
+    display        : flex;
+    justify-content: space-between;
+  }
+
+  #sunflower {
+    /* Calculate a margin between the center app */
+    margin-left : calc(0.1em + 1vmin);
+    margin-right: calc(0.1em + 1vmin);
+  }
+
+  h5 {
+    font-size: calc(0.2em + .7vmin);
+  }
+
+}
+
+/* END Media Queries */
+
+/* START Base Styling */
+
+body {
+  color        : #344;
+  margin-left  : auto;
+  margin-right : auto;
+  max-width    : 700px;
+  padding-left : calc(0.2em + 1vmin); /* Calculate and add padding to both sides of webpage */
+  padding-right: calc(0.2em + 1vmin);
+  font-family  : 'Lato', sans-serif;
+}
+
+img {
+  width        : 100%;
+  border-radius: 5px;
+  height       : auto;
+}
+
+h1 {
+	/* Name */
+  font-size  : calc(1.5em + .75vmin);
+  font-weight: 100;
+}
+
+
+h2 {
+  /* "Featured" */
+  color      : #89a;
+  font-size  : calc(1em + 1vmin);
+  font-weight: 300;
+}
+
+h3,
+p {
+	/* Subtitle and paragraph text */
+  font-size: calc(0.6em + 1vmin);
+}
+
+h4 {
+  font-weight:300;
+}
+/* END Base Styling */
+
+/* START Flexible Grid Setup */
+
+.flex-grid {
+  /* Referred to https://css-tricks.com/dont-overthink-flexbox-grids/ */
+  display: flex;
+}
+
+.col {
+	flex: 1;
+}
+
+/* END Flexible Grid Setup */
+
+/* START Top Content (.icon, .name and .subtitle) */
+
+header {
+	/* Horizontal line below logo/name/subtitle */
+  border-bottom: .2em solid #7d97ad;
+  margin-bottom: calc(0.2em + 1vmin);
+}
+
+#top_icon {
+  /* Giving the top left icon it's dedicated space */
+  max-width: 10%;
+  padding-top:.9em;
+}
+
+
+header
+img {
+  max-width : 75px;
+}
+
+#name_subtitle{
+  text-align    : right;
+  text-transform: uppercase;
+  line-height   : .8em;
+  margin-bottom : 0;
+}
+
+/* END Top Content */
+
+/* START Featured Content */
+
+#featured
+h2 {
+  margin-left: .4em;
+  display    :inline;
+}
+
+#app {
+  line-height:.7em;
+}
+
+#app,
+h4,
+h5 {
+  /* Center all text associated with the app thumbmnails */
+  text-align    : center;
+  margin-top    : calc(0.1em + 1vmin);
+  margin-bottom : calc(0.1em + 1vmin);
+}
+
+
+
+/* END Featured Content */
