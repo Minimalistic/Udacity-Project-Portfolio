@@ -1,4 +1,4 @@
-![Udacity Logo](/img/Udacity_200.png)
+![Portfolio Cover Image](/img/portfolio_cover.png)
 
 # Jason's Portfolio Project
 
